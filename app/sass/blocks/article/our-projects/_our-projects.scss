@@ -8,6 +8,8 @@
 
     &__guarantee {
         display: flex;
+        padding-bottom: 90px;
+        border-bottom: 1px solid rgba(161, 161, 161, .5);
     }
 
     &__text {
@@ -19,7 +21,7 @@
         font-weight: bold;
         font-size: 36px;
         line-height: 53px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         padding-right: 30px;
     }
 
@@ -28,7 +30,7 @@
         line-height: 25px;
         color: #999999;
         padding-right: 160px;
-        margin-bottom: 20px
+        padding-bottom: 20px
     }
 
     &__link {
@@ -52,19 +54,17 @@
     &__projects {
         display: flex;
         justify-content: space-around;
-        border-top: 1px solid rgba(161, 161, 161, .5);
-        margin-top: 90px;
     }
 
     &__project {
         margin-top: 60px;
         padding: 10px 15px;
         border-radius: 30px;
-        transition: .1s;
+        transition: .3s;
         cursor: pointer;
 
         &:hover {
-            background-color: lightblue;
+            transform: scale(1.1);
         }
     }
 

@@ -1,5 +1,5 @@
 .header-text {
-    .header-text__wrapper {
+    &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -7,15 +7,15 @@
         padding-bottom: 150px;
     }
 
-    .header-text__title {
+    &__title {
+        padding: 0 0 10px 0;
         color: #FFFFFF;
         line-height: 20px;
         text-align: center;
     }
 
-    .header-text__slogan {
-        margin-top: 10px;
-        padding: 0 50px;
+    &__slogan {
+        padding: 0 50px 25px 50px;
         color: #FFFFFF;
         font-weight: bold;
         font-size: 48px;
@@ -23,9 +23,8 @@
         text-align: center;
     }
 
-    .header-text__btn {
+    &__btn {
         width: 190px;
-        margin-top: 25px;
         padding: 10px 0;
         color: #FFFFFF;
         line-height: 20px;
