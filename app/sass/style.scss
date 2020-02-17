@@ -1,0 +1,14 @@
+@import "commons/variables";
+@import "commons/mixins";
+@import "commons/fonts";
+@import "commons/container";
+@import "blocks/header/header";
+@import "blocks/header/nav";
+@import "blocks/header/header-text";
+@import "blocks/article/provision-of-services/provision-of-services";
+@import "blocks/article/our-projects/our-projects";
+
+body {
+    font-family: $fontMontserrat;
+    font-weight: 500;
+}

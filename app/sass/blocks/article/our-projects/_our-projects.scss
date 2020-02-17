@@ -1,0 +1,93 @@
+.our-projects {
+    background: #F6F6F8;
+
+    &__wrapper {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    &__guarantee {
+        display: flex;
+    }
+
+    &__text {
+        width: 57%;
+        padding-top: 50px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 53px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 25px;
+        color: #999999;
+        padding-right: 160px;
+        margin-bottom: 20px
+    }
+
+    &__link {
+        color: #4985FF;
+        transition: .5s;
+
+        &:hover {
+            color: #ff3a26;
+        }
+    }
+
+    &__img {
+        background-image: url("../img/projects.jpg");
+        background-repeat: no-repeat;
+        box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+        border-radius: 30px;
+        width: 495px;
+        height: 395px;
+    }
+
+    &__projects {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgba(161, 161, 161, .5);
+        margin-top: 90px;
+    }
+
+    &__project {
+        margin-top: 60px;
+        padding: 10px 15px;
+        border-radius: 30px;
+        transition: .1s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lightblue;
+        }
+    }
+
+    &__number {
+        display: flex;
+    }
+
+    &__icon {
+        background-image: url("../img/web-programming.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+    }
+
+    &__num {
+        font-size: 36px;
+        padding-left: 20px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 25px;
+        color: #999999;
+    }
+
+}

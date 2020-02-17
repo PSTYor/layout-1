@@ -1,0 +1,24 @@
+.nav {
+    border-bottom: 1px solid rgba(161, 161, 161, .5);
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    &__item {
+        padding: 25px 20px;
+        color: #FFFFFF;
+        line-height: 20px;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: solid 1px white;
+        }
+
+        &:nth-child(1) {
+            border-bottom: solid 1px white;
+        }
+    }
+}
