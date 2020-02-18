@@ -12,7 +12,8 @@ gulp.task("sass", function() {
     return gulp.src("./app/sass/style.scss")
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle: "compressed"
+            outputStyle: "compressed",
+            includePaths: require('node-normalize-scss').includePaths
         })).on("error", sass.logError)
         .pipe(autoprefixer({
             overrideBrowserslist:  ['last 2 versions'],
