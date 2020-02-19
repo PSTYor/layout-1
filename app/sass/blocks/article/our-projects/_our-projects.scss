@@ -2,35 +2,32 @@
     background: #F6F6F8;
 
     &__wrapper {
-        padding-top: 100px;
-        padding-bottom: 70px;
+        padding: 100px 0 70px 0;
     }
 
     &__guarantee {
         display: flex;
-        padding-bottom: 90px;
+        padding: 0 0 90px 0;
         border-bottom: 1px solid rgba(161, 161, 161, .5);
     }
 
     &__text {
         width: 57%;
-        padding-top: 50px;
+        padding: 50px 0 0 0;
     }
 
     &__title {
         font-weight: bold;
         font-size: 36px;
         line-height: 53px;
-        padding-bottom: 20px;
-        padding-right: 30px;
+        padding: 0 30px 20px 0;
     }
 
     &__desc {
         font-size: 16px;
         line-height: 25px;
         color: #999999;
-        padding-right: 160px;
-        padding-bottom: 20px
+        padding: 0 160px 20px 0;
     }
 
     &__link {
@@ -57,7 +54,7 @@
     }
 
     &__project {
-        margin-top: 60px;
+        margin: 60px 0 0 0;
         padding: 10px 15px;
         border-radius: 30px;
         transition: .3s;
@@ -81,7 +78,7 @@
 
     &__num {
         font-size: 36px;
-        padding-left: 20px;
+        padding: 0 0 0 20px;
     }
 
     &__subtitle {

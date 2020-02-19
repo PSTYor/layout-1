@@ -1,7 +1,13 @@
+/* Сброс стилей */
+@import "../../node_modules/node-normalize-scss/normalize";
+
+/* Миксины, шрифты, перменные и тд. */
 @import "commons/variables";
 @import "commons/mixins";
 @import "commons/fonts";
 @import "commons/container";
+
+/* Стили для блоков */
 @import "blocks/header/header";
 @import "blocks/header/nav";
 @import "blocks/header/header-text";
@@ -10,6 +16,9 @@
 @import "blocks/article/specialized-services/specialized-services";
 @import "blocks/article/all-our-projects/all-our-projects";
 @import "blocks/article/video-about-our/video-about-our";
+
+/* Стили для глобальных блоков */
+@import "global_blocks/button";
 
 body {
     font-family: $fontMontserrat;
