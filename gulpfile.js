@@ -1,12 +1,13 @@
 "use strict";
 
-const gulp = require("gulp");
-const sass = require("gulp-sass");
-const rename = require("gulp-rename");
-const autoprefixer = require("gulp-autoprefixer");
-const sourcemaps = require("gulp-sourcemaps");
-const brSync = require("browser-sync").create();
-const imagemin = require("gulp-imagemin");
+let gulp = require("gulp"),
+    sass = require("gulp-sass"),
+    rename = require("gulp-rename"),
+    autoprefixer = require("gulp-autoprefixer"),
+    sourcemaps = require("gulp-sourcemaps"),
+    brSync = require("browser-sync").create(),
+    imagemin = require("gulp-imagemin");
+
 
 gulp.task("sass", function() {
     return gulp.src("./app/sass/style.scss")
