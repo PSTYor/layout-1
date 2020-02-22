@@ -1,24 +1,59 @@
 /* Сброс стилей */
 @import "../../node_modules/node-normalize-scss/normalize";
 
-/* Миксины, шрифты, перменные и тд. */
+
+/* Миксины, шрифты, переменные и тд. */
 @import "commons/variables";
 @import "commons/mixins";
 @import "commons/fonts";
 @import "commons/container";
 
-/* Стили для блоков */
-@import "blocks/header/header";
-@import "blocks/header/nav";
-@import "blocks/header/header-text";
-@import "blocks/article/provision-of-services/provision-of-services";
-@import "blocks/article/our-projects/our-projects";
-@import "blocks/article/specialized-services/specialized-services";
-@import "blocks/article/all-our-projects/all-our-projects";
-@import "blocks/article/video-about-our/video-about-our";
 
-/* Стили для глобальных блоков */
-@import "global_blocks/button";
+/* Стили для блоков */
+/* Шапка */
+@import "blocks/header/header";
+@import "blocks/header/header-nav/header-nav";
+@import "blocks/header/header-nav/nav-items/nav-items";
+@import "blocks/header/header-text/header-text";
+@import "blocks/header/button/button";
+
+/* Главное содержание */
+/* Блоки для "наших услуг" */
+@import "blocks/article/our-services/our-services";
+@import "blocks/article/our-services/our-services-service/our-services-service";
+@import "blocks/article/our-services/our-services-services/our-service-services";
+@import "blocks/article/our-services/our-services-text/our-services-text";
+
+/* Блоки для "о нас" */
+@import "blocks/article/about-us/about-us";
+@import "blocks/article/about-us/about-us-guarantee/about-us-guarantee";
+@import "blocks/article/about-us/about-us-text/about-us-text";
+@import "blocks/article/about-us/about-us-img/about-us-img";
+@import "blocks/article/about-us/about-us-projects/about-us-projects";
+@import "blocks/article/about-us/about-us-project/about-us-project";
+
+/* Блоки для "все услуги" */
+@import "blocks/article/all-services/all-services";
+@import "blocks/article/all-services/all-services-text/all-services-text";
+@import "blocks/article/all-services/all-services-services/all-services-services";
+@import "blocks/article/all-services/all-services-service/all-services-service";
+
+/* Блоки для "все проекты" */
+@import "blocks/article/all-projects/all-projects";
+@import "blocks/article/all-projects/all-projects-projects/all-projects-projects";
+@import "blocks/article/all-projects/all-projects-project/all-projects-project";
+
+/* Блоки для "видео о нашей работе" */
+@import "blocks/article/video-our-jobs/video-our-jobs";
+@import "blocks/article/video-our-jobs/video-our-jobs-video/video-our-jobs-video";
+@import "blocks/article/video-our-jobs/video-our-jobs-video/video-our-jobs-video-button/video-our-jobs-video-button";
+
+/* Блоки для "подпишитесь на нас" */
+@import "blocks/article/subscribe/subscribe";
+@import "blocks/article/subscribe/subscribe-form/subscribe-form";
+@import "blocks/article/subscribe/subscribe-form/subscribe-form-text/subscribe-form-text";
+@import "blocks/article/subscribe/subscribe-form/subscribe-form-button/subscribe-form-button";
+@import "blocks/article/subscribe/subscribe-form/subscribe-form-spam/_subscribe-form-spam.scss";
 
 body {
     font-family: $fontMontserrat;

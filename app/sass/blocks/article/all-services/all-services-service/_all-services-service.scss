@@ -1,31 +1,5 @@
-.specialized-services {
-    background: linear-gradient(to bottom, #504DC2 50%, #FFF 50%);
-
+.all-services-service {
     &__wrapper {
-        margin: 0 0 85px 0;
-        padding: 90px 0;
-        border-bottom: 1px solid #E0E0E0;
-    }
-
-    &__text {
-        display: flex;
-        align-items: center;
-    }
-
-    &__title {
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 53px;
-        color: #FFFFFF;
-    }
-
-    &__services {
-        display: flex;
-        justify-content: space-between;
-        padding: 50px 0 0 0;
-    }
-
-    &__service {
         width: 350px;
     }
 
@@ -38,7 +12,7 @@
         border-radius: 10px;
     }
 
-    &__subtitle {
+    &__title {
         padding: 25px 0;
         font-size: 18px;
         line-height: 22px;
@@ -49,7 +23,7 @@
         color: #4985FF;
     }
 
-    &__desc {
+    &__text {
         padding: 0 0 25px 0;
         line-height: 25px;
         color: #999999;
