@@ -1,0 +1,9 @@
+.our-services-services {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 0 50px 0;
+    }
+}

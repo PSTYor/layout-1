@@ -1,0 +1,12 @@
+.about-us-guarantee {
+    &__wrapper {
+        display: flex;
+        padding: 0 0 90px 0;
+        border-bottom: 1px solid rgba(161, 161, 161, .5);
+    }
+
+    &__left {
+        width: 57%;
+        padding: 50px 0 0 0;
+    }
+}

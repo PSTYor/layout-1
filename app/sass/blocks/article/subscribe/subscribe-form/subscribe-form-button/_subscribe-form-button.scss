@@ -1,0 +1,27 @@
+.subscribe-form-button {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+        border: 1px solid #F2F2F2;
+        border-radius: 30px;
+    }
+
+    &__email {
+        padding: 10px 35px;
+        font-size: 13px;
+        line-height: 21px;
+        color: #999999;
+        border: none;
+        border-radius: 30px 0 0 30px;
+    }
+
+    &__btn {
+        padding: 10px 30px;
+        color: #FFFFFF;
+        background: #4985FF;
+        border: none;
+        border-radius: 0 30px 30px 0;
+        cursor: pointer;
+    }
+}

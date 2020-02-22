@@ -1,0 +1,11 @@
+.all-services-text {
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 53px;
+        color: #FFFFFF;
+    }
+}

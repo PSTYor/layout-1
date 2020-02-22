@@ -1,0 +1,13 @@
+.video-our-jobs-video {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 970px;
+        height: 430px;
+        background-image: url("../img/video-about_city.jpg");
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

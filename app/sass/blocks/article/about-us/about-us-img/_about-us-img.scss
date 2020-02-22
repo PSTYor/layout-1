@@ -1,0 +1,10 @@
+.about-us-img {
+    &__image {
+        background-image: url("../img/projects.jpg");
+        background-repeat: no-repeat;
+        box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+        border-radius: 30px;
+        width: 495px;
+        height: 395px;
+    }
+}

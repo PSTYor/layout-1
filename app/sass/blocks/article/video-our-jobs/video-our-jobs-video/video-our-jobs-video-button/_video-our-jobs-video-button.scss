@@ -1,0 +1,43 @@
+.video-our-jobs-video-button {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FFFFFF;
+        border-radius: 100px;
+        padding: 20px 40px;
+        transition: .3s;
+        color: #FFFFFF;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: #ff3a26;
+            border: 1px solid #ff3a26;
+        }
+
+        &:hover .video-our-jobs-video-button__circle {
+            background-color: #ff3a26;
+        }
+    }
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin: 0 15px 0 0;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        transition: .3s;
+    }
+
+    &__triangle {
+        margin: 0 0 0 7px;
+        border-top: 10px solid transparent;
+        border-left: 20px solid #4985FF;
+        border-bottom: 10px solid transparent;
+
+    }
+}
