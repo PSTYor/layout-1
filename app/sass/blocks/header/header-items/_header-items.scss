@@ -1,7 +1,8 @@
-.header-nav-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
+.header-items {
+    &__wrapper {
+        display: flex;
+        justify-content: right;
+    }
 
     &__item {
         padding: 25px 20px;
