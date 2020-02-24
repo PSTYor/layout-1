@@ -1,0 +1,46 @@
+.footer-items-contact {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 255px;
+    }
+
+    &__title {
+        padding: 0 0 30px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__link {
+        display: flex;
+        padding: 0 0 20px 0;
+        font-size: 14px;
+        color: #999;
+        text-decoration: none;
+        transition: .5s;
+
+        &:hover {
+            color: $fontRedHover;
+        }
+    }
+
+    &__image {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        padding: 0 10px 0 0;
+        background-repeat: no-repeat;
+    }
+
+    &__email {
+        background-image: url("../img/email.svg");
+    }
+
+    &__phone {
+        background-image: url("../img/phone.svg");
+    }
+
+    &__position {
+        background-image: url("../img/position.svg");
+    }
+}

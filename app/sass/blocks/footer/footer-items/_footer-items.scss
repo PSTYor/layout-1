@@ -1,0 +1,8 @@
+.footer-items {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 45px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
