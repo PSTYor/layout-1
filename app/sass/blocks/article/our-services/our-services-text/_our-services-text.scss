@@ -6,6 +6,10 @@
         line-height: 53px;
         text-align: center;
         color: #323232;
+
+        &_white {
+            color: #fff;
+        }
     }
 
     &__subtitle {
@@ -13,6 +17,10 @@
         font-size: 16px;
         line-height: 25px;
         text-align: center;
-        color: #999999;
+        color: #999;
+
+        &_white {
+            color: #fff;
+        }
     }
 }

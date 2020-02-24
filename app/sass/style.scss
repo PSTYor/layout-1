@@ -54,6 +54,13 @@
 @import "blocks/article/subscribe/subscribe-form/subscribe-form-button/subscribe-form-button";
 @import "blocks/article/subscribe/subscribe-form/subscribe-form-spam/_subscribe-form-spam.scss";
 
+/* Подвал */
+@import "blocks/footer/footer";
+@import "blocks/footer/footer-items/footer-items";
+@import "blocks/footer/footer-items/footer-items-contact/footer-items-contact";
+@import "blocks/footer/footer-items/footer-items-links/footer-items-links";
+@import "blocks/footer/footer-copyright/footer-copyright";
+
 body {
     font-family: $fontMontserrat;
     font-weight: 500;
