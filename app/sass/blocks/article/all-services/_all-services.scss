@@ -5,5 +5,10 @@
         margin: 0 0 85px 0;
         padding: 90px 0;
         border-bottom: 1px solid #e0e0e0;
+
+        @include mq-block-none-small {
+            margin: 0 0 50px 0;
+            padding: 50px 0;
+        }
     }
 }

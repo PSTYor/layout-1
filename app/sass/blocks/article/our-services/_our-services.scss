@@ -3,6 +3,10 @@
         display: flex;
         flex-direction: column;
         padding: 90px 0 100px 0;
+
+        @include mq-block-none-small {
+            padding: 50px 0;
+        }
     }
 
     &__wrap-btn {

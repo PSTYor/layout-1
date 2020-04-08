@@ -1,9 +1,18 @@
-.header-items {
+.header-nav {
     border-bottom: 1px solid #a1a1a1;
+
+    @include mq-block-none-small {
+        display: none;
+    }
+
     &__wrapper {
         display: flex;
         justify-content: right;
         height: 71px;
+
+        @include mq-small {
+            justify-content: center;
+        }
     }
 
     &__item {

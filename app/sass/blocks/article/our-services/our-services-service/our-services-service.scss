@@ -1,6 +1,7 @@
 .our-services-service {
     &__wrapper {
         display: flex;
+        width: 353px;
         padding: 5px 5px;
         border-radius: 30px;
         transition: .3s;
@@ -9,12 +10,28 @@
         &:hover {
             transform: scale(1.1);
         }
+
+        @include mq-block-none-small {
+            padding: 10px 0;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
     }
 
     &__img {
         background-image: url("../img/service.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-shrink: 0;
         width: 110px;
         height: 110px;
+
+        @include mq-block-none-small {
+            width: 80px;
+            height: 80px;
+        }
     }
 
     &__subject {
@@ -22,13 +39,23 @@
         line-height: 22px;
         color: #000;
         display: block;
+
+        @include mq-block-none-small {
+            font-size: 16px;
+            line-height: 25px;
+        }
     }
 
     &__text {
-        width: 222px;
         padding: 45px 0 0 17px;
         font-size: 14px;
         line-height: 22px;
         color: #999;
+
+        @include mq-block-none-small {
+            padding: 25px 0 0 10px;
+            font-size: 12px;
+            line-height: 19px;
+        }
     }
 }

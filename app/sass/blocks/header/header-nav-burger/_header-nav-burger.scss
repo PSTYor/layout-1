@@ -1,0 +1,17 @@
+.header-nav-burger {
+
+    @include mq-block-none-large {
+        display: none;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: right;
+        padding: 10px 0 0 0;
+        color: #fff;
+    }
+
+    &__item {
+
+    }
+}

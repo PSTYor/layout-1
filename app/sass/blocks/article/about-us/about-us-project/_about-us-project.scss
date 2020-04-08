@@ -5,6 +5,10 @@
 
     &:hover {
         transform: scale(1.1);
+
+        @include mq-block-none-small {
+            transform: scale(1.05);
+        }
     }
 
     &__wrapper {

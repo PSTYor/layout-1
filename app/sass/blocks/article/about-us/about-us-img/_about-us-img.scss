@@ -6,5 +6,9 @@
         border-radius: 30px;
         width: 495px;
         height: 395px;
+
+        @include mq-block-none-small {
+            display: none;
+        }
     }
 }

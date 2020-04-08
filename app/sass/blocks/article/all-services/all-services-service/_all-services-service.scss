@@ -1,6 +1,11 @@
 .all-services-service {
     &__wrapper {
         width: 350px;
+
+        @include mq-block-none-small {
+            width: 100%;
+            padding: 0 0 40px 0;
+        }
     }
 
     &__img {
@@ -10,12 +15,20 @@
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 10px;
+
+        @include mq-block-none-small {
+            width: 100%;
+        }
     }
 
     &__title {
         padding: 25px 0;
         font-size: 18px;
         line-height: 22px;
+
+        @include mq-block-none-small {
+            padding: 10px 0;
+        }
     }
 
     &__number {
@@ -26,6 +39,12 @@
         padding: 0 0 25px 0;
         line-height: 25px;
         color: #999;
+
+        @include mq-block-none-small {
+            padding: 0 0 10px 0;
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 
     &__link {

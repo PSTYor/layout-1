@@ -1,7 +1,7 @@
 .video-our-jobs {
     background-image: url("../img/video-about.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     &__wrapper {
         display: flex;

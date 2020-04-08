@@ -12,8 +12,9 @@
 /* Стили для блоков */
 /* Шапка */
 @import "blocks/header/header";
-@import "blocks/header/header-items/header-items";
+@import "blocks/header/header-nav/header-nav";
 @import "blocks/header/header-text/header-text";
+@import "blocks/header/header-nav-burger/header-nav-burger";
 @import "blocks/header/button/button";
 
 /* Главное содержание */

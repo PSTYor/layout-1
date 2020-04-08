@@ -3,5 +3,9 @@
 
     &__wrapper {
         padding: 100px 0 70px 0;
+
+        @include mq-block-none-small {
+            padding: 50px 0;
+        }
     }
 }
