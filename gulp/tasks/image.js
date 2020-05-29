@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function() {
     $.gulp.task('image', function() {
         return $.gulp.src('./app/img/*')

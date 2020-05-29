@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function() {
     $.gulp.task('sass', function() {
         return $.gulp.src('./app/sass/style.scss')

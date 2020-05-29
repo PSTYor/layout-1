@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function() {
     $.gulp.task('watch', function() {
         $.gulp.watch('./app/sass/**/*.scss', $.gulp.series('sass'));
