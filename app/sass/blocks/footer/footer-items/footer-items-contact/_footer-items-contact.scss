@@ -16,31 +16,19 @@
         padding: 0 0 20px 0;
         font-size: 14px;
         color: #999;
+        fill: #999;
         text-decoration: none;
         transition: .5s;
 
         &:hover {
             color: $fontRedHover;
+            fill: $fontRedHover;
         }
     }
 
     &__image {
-        display: inline-block;
         width: 15px;
         height: 15px;
         padding: 0 10px 0 0;
-        background-repeat: no-repeat;
-    }
-
-    &__email {
-        background-image: url("../img/email.svg");
-    }
-
-    &__phone {
-        background-image: url("../img/phone.svg");
-    }
-
-    &__position {
-        background-image: url("../img/position.svg");
     }
 }

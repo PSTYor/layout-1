@@ -15,20 +15,19 @@
         padding: 0 0 20px 0;
         font-size: 14px;
         color: #999;
+        fill: #999;
         text-decoration: none;
         transition: .5s;
 
         &:hover {
             color: $fontRedHover;
+            fill: $fontRedHover;
         }
     }
 
     &__image {
-        display: inline-block;
         width: 10px;
         height: 10px;
         padding: 0 5px 0 0;
-        background-image: url("../img/right-arrow.svg");
-        background-repeat: no-repeat;
     }
 }

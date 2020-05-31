@@ -1,7 +1,11 @@
+mixin add-svg(name_class, name_icon)
+    svg(class='' + name_class)
+        use(xlink:href='img/svg/symbol/svg/sprite.symbol.svg#' + name_icon)
+
 mixin header-nav__wrapper(items)
     .header-nav__wrapper
         each item in items
-            a(href='#').header-nav__item.up-first-letter= item
+            a(href='#').header-nav__item= item
 
 mixin our-services-services(amount)
     .our-services-services
@@ -9,9 +13,9 @@ mixin our-services-services(amount)
             - for(var i = 1; i <= amount; i++)
                 .our-services-service
                     .our-services-service__wrapper
-                        .our-services-service__img
-                        .our-services-service__text.up-first-letter
-                            span.our-services-service__subject.up-first-letter cоздание сайтой
+                        +add-svg('our-services-service__img', 'icon-service')
+                        .our-services-service__text
+                            span.our-services-service__subject Создание сайтов
                             | Lorem Ipsum - это текст- "рыба", часто использует в печати и вэб-дизайне.
 
 mixin about-us-projects(amount)
@@ -20,9 +24,9 @@ mixin about-us-projects(amount)
             .about-us-project
                 .about-us-project__wrapper
                     .about-us-project__number
-                        .about-us-project__icon
+                        +add-svg('about-us-project__icon', 'icon-web-programming')
                         .about-us-project__num 125
-                    .about-us-project__subtitle.up-first-letter our projects
+                    .about-us-project__subtitle Our projects
 
 mixin all-services-services(amount)
     .all-services-services
@@ -31,13 +35,13 @@ mixin all-services-services(amount)
                 .all-services-service
                     .all-services-service__wrapper
                         .all-services-service__img
-                        .all-services-service__title.up-first-letter
+                        .all-services-service__title
                             span.all-services-service__number 01 &#32;
-                            | исследование и упаковка
-                        .all-services-service__text.up-first-letter
+                            | Исследование и упаковка
+                        .all-services-service__text
                             | Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                             | Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-                        a(href='#').all-services-service__link.up-first-letter подробнее
+                        a(href='#').all-services-service__link Подробнее
 
 mixin all-projects-projects(amount)
     .all-projects-projects
@@ -47,19 +51,22 @@ mixin all-projects-projects(amount)
                     .all-projects-project__image
 
 mixin footer-items-main-links(items)
-    .footer-items-links__title.footer-items-main-links__title.up-first-letter основные ссылки
+    .footer-items-links__title.footer-items-main-links__title Основные ссылки
     each item in items
-        a(href='#').footer-items-links__link.footer-items-main-links__link.up-first-letter= item
-            span.footer-items-links__image.footer-items-main-links__image
+        a(href='#').footer-items-links__link.footer-items-main-links__link
+            +add-svg('footer-items-links__image footer-items-our-projects__image', 'icon-right-arrow')
+            = item
 
 mixin footer-items-our-projects(items)
-    .footer-items-links__title.footer-items-our-projects__title.up-first-letter наши проекты
+    .footer-items-links__title.footer-items-our-projects__title Наши проекты
     each item in items
-        a(href='#').footer-items-links__link.footer-items-our-projects__link.up-first-letter= item
-            span.footer-items-links__image.footer-items-our-projects__image
+        a(href='#').footer-items-links__link.footer-items-our-projects__link
+            +add-svg('footer-items-links__image footer-items-our-projects__image', 'icon-right-arrow')
+            = item
 
 mixin footer-items-social-links(items)
-    .footer-items-links__title.footer-items-social-links__title.up-first-letter социальные сети
+    .footer-items-links__title.footer-items-social-links__title Социальные сети
     each item in items
-        a(href='#').footer-items-links__link.footer-items-social-links__link= item
-            span.footer-items-links__image.footer-items-social-links__image
+        a(href='#').footer-items-links__link.footer-items-social-links__link
+            +add-svg('footer-items-links__image footer-items-our-projects__image', 'icon-right-arrow')
+            = item
