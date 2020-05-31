@@ -1,0 +1,10 @@
+include ../../../commons/mixins
+
+section.all-services
+    .container
+        .all-services__wrapper
+            .all-services-text
+                .all-services-text__title.up-first-letter наши работы, на которых мы специализируемся
+                .button
+                    a(href='#').button__btn.up-first-letter все услуги
+            +all-services-services(3)

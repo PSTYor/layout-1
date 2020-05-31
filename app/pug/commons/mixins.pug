@@ -1,0 +1,65 @@
+mixin header-nav__wrapper(items)
+    .header-nav__wrapper
+        each item in items
+            a(href='#').header-nav__item.up-first-letter= item
+
+mixin our-services-services(amount)
+    .our-services-services
+        .our-services-services__wrapper
+            - for(var i = 1; i <= amount; i++)
+                .our-services-service
+                    .our-services-service__wrapper
+                        .our-services-service__img
+                        .our-services-service__text.up-first-letter
+                            span.our-services-service__subject.up-first-letter cоздание сайтой
+                            | Lorem Ipsum - это текст- "рыба", часто использует в печати и вэб-дизайне.
+
+mixin about-us-projects(amount)
+    .about-us-projects
+        - for(var i = 1; i <= amount; i++)
+            .about-us-project
+                .about-us-project__wrapper
+                    .about-us-project__number
+                        .about-us-project__icon
+                        .about-us-project__num 125
+                    .about-us-project__subtitle.up-first-letter our projects
+
+mixin all-services-services(amount)
+    .all-services-services
+        .all-services-services__wrapper
+            - for(var i = 1; i <= amount; i++)
+                .all-services-service
+                    .all-services-service__wrapper
+                        .all-services-service__img
+                        .all-services-service__title.up-first-letter
+                            span.all-services-service__number 01 &#32;
+                            | исследование и упаковка
+                        .all-services-service__text.up-first-letter
+                            | Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                            | Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        a(href='#').all-services-service__link.up-first-letter подробнее
+
+mixin all-projects-projects(amount)
+    .all-projects-projects
+        .all-projects-projects__wrapper
+            - for(var i = 1; i <= amount; i++)
+                .all-projects-project
+                    .all-projects-project__image
+
+mixin footer-items-main-links(items)
+    .footer-items-links__title.footer-items-main-links__title.up-first-letter основные ссылки
+    each item in items
+        a(href='#').footer-items-links__link.footer-items-main-links__link.up-first-letter= item
+            span.footer-items-links__image.footer-items-main-links__image
+
+mixin footer-items-our-projects(items)
+    .footer-items-links__title.footer-items-our-projects__title.up-first-letter наши проекты
+    each item in items
+        a(href='#').footer-items-links__link.footer-items-our-projects__link.up-first-letter= item
+            span.footer-items-links__image.footer-items-our-projects__image
+
+mixin footer-items-social-links(items)
+    .footer-items-links__title.footer-items-social-links__title.up-first-letter социальные сети
+    each item in items
+        a(href='#').footer-items-links__link.footer-items-social-links__link= item
+            span.footer-items-links__image.footer-items-social-links__image

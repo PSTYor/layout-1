@@ -1,0 +1,17 @@
+include ../../commons/mixins
+include ../../commons/variables
+
+header.header
+    nav.header-nav
+        .container
+            +header-nav__wrapper(item_nav)
+    .header-nav-burger
+        .container
+            .header-nav-burger__wrapper кнопка
+    .container
+        .header-text
+            .header-text__wrapper
+                .header-text__title.up-first-letter передовая IT студия
+                .header-text__slogan.up-first-letter мы создаем легкие решения сложных задач и проблем
+                .button
+                    a(href='#').button__btn.up-first-letter наши проекты

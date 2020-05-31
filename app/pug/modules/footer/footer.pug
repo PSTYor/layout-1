@@ -1,0 +1,29 @@
+include ../../commons/mixins
+include ../../commons/variables
+
+footer.footer
+    .container
+        .footer__wrapper
+            .footer-items
+                .footer-items__wrapper
+                    .footer-items-contact
+                        .footer-items-contact__wrapper
+                            .footer-items-contact__title.up-first-letter контактная информация
+                            a(href='#').footer-items-contact__link
+                                span.footer-items-contact__image.footer-items-contact__email
+                                | test@test.ru
+                            a(href='#').footer-items-contact__link
+                                span.footer-items-contact__image.footer-items-contact__phone
+                                | +8 777 555 66 99
+                            a(href='#').footer-items-contact__link
+                                span.footer-items-contact__image.footer-items-contact__position
+                                | Москва, Бульвар Ленина 33
+                    .footer-items-links.footer-items-main-links.footer-items-links__wrapper
+                        +footer-items-main-links(item_mainLinks)
+                    .footer-items-links.footer-items-our-projects.footer-items-links__wrapper
+                        +footer-items-our-projects(item_ourProjects)
+                    .footer-items-links.footer-items-social-links.footer-items-links__wrapper
+                        +footer-items-social-links(item_socialLinks)
+            .footer-copyright
+                .footer-copyright__wrapper
+                    .footer-copyright__copy (с) 2019. Все права защищены.
