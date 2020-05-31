@@ -2,11 +2,13 @@
 @import "../../node_modules/node-normalize-scss/normalize";
 
 
+
 /* Миксины, шрифты, переменные и тд. */
 @import "commons/variables";
 @import "commons/mixins";
 @import "commons/fonts";
 @import "commons/container";
+
 
 
 /* Стили для блоков */
@@ -16,6 +18,7 @@
 @import "blocks/header/header-text/header-text";
 @import "blocks/header/header-nav-burger/header-nav-burger";
 @import "blocks/header/button/button";
+
 
 /* Главное содержание */
 /* Блоки для "наших услуг" */
@@ -55,6 +58,7 @@
 @import "blocks/article/subscribe/subscribe-form/subscribe-form-button/subscribe-form-button";
 @import "blocks/article/subscribe/subscribe-form/subscribe-form-spam/_subscribe-form-spam.scss";
 
+
 /* Подвал */
 @import "blocks/footer/footer";
 @import "blocks/footer/footer-items/footer-items";
@@ -62,7 +66,7 @@
 @import "blocks/footer/footer-items/footer-items-links/footer-items-links";
 @import "blocks/footer/footer-copyright/footer-copyright";
 
-body {
-    font-family: $fontMontserrat;
-    font-weight: 500;
-}
+
+
+/* Глобальные стили */
+@import "blocks/different/different";

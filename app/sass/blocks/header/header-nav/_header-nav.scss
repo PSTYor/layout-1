@@ -7,7 +7,7 @@
 
     &__wrapper {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         height: 71px;
 
         @include mq-small {
