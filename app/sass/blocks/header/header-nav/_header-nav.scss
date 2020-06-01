@@ -1,7 +1,7 @@
 .header-nav {
     border-bottom: 1px solid #a1a1a1;
 
-    @include mq-block-none-small {
+    @include mq-zero-and-screen-small {
         display: none;
     }
 
@@ -20,10 +20,11 @@
         color: #fff;
         line-height: 20px;
         text-decoration: none;
-        transition: border .2s;
+        transition: .3s;
+        border-bottom: solid 2px transparent;
 
         &:hover {
-            border-bottom: solid 1px #fff;
+            border-bottom: solid 2px #fff;
         }
     }
 }

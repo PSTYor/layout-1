@@ -46,13 +46,13 @@
     }
 }
 
-@mixin mq-block-none-small {
+@mixin mq-zero-and-screen-small {
     @media (min-width: 0) and (max-width: $screen-small - 1px) {
         @content;
     }
 }
 
-@mixin mq-block-none-large {
+@mixin mq-screen-small-and-large {
     @media (min-width: $screen-small) {
         @content;
     }

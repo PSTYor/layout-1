@@ -1,12 +1,24 @@
 .all-services {
-    background: linear-gradient(to bottom, #504dc2 50%, #fff 50%);
+    background: linear-gradient(to bottom, #504DC2 50%, #fff 50%);
+
+    @include mq-zero-and-screen-small {
+        background: linear-gradient(to bottom, #504DC2 25%, #fff 25%);
+    }
+
+    @include mq-small {
+        background: linear-gradient(to bottom, #504DC2 30%, #fff 30%);
+    }
+
+    @include mq-medium {
+        background: linear-gradient(to bottom, #504DC2 35%, #fff 35%);
+    }
 
     &__wrapper {
         margin: 0 0 85px 0;
         padding: 90px 0;
         border-bottom: 1px solid #e0e0e0;
 
-        @include mq-block-none-small {
+        @include mq-zero-and-screen-small {
             margin: 0 0 50px 0;
             padding: 50px 0;
         }

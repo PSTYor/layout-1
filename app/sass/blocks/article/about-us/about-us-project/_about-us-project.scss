@@ -6,7 +6,7 @@
     &:hover {
         transform: scale(1.1);
 
-        @include mq-block-none-small {
+        @include mq-zero-and-screen-small {
             transform: scale(1.05);
         }
     }
