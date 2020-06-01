@@ -6,6 +6,7 @@ module.exports = function() {
             .pipe($.plugins.pug({
                 pretty: true
             }))
+            .pipe($.plugins.rename({extname: '.php'}))
             .pipe($.gulp.dest('./dist'))
             .pipe($.browserSync.reload({stream:true}));
     });
