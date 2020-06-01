@@ -5,6 +5,10 @@
         display: flex;
         flex-direction: column;
         padding: 90px 0 130px 0;
+
+        @include mq-zero-and-screen-small {
+            padding: 90px 0;
+        }
     }
 
     &__wrap-btn {

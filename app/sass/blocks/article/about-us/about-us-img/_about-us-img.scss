@@ -7,7 +7,7 @@
         width: 495px;
         height: 395px;
 
-        @include mq-block-none-small {
+        @include mq-zero-and-screen-small {
             display: none;
         }
     }

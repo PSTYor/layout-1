@@ -1,6 +1,6 @@
 .header-nav-burger {
 
-    @include mq-block-none-large {
+    @include mq-screen-small-and-large {
         display: none;
     }
 
