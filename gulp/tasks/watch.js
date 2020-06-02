@@ -7,5 +7,6 @@ module.exports = function() {
         $.gulp.watch('./app/img/*', $.gulp.series('image'));
         $.gulp.watch('./app/img/svg/*.svg', $.gulp.series('svg'));
         $.gulp.watch('./app/php/*.php', $.gulp.series('php'));
+        $.gulp.watch('./app/js/*.js', $.gulp.series('uglify'));
     });
 };
