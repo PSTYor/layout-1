@@ -1,0 +1,11 @@
+.footer-items-block {
+  display: flex;
+
+  @include mq-small {
+    display: none;
+  }
+
+  @include mq-zero-and-screen-small {
+    display: none;
+  }
+}

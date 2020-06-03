@@ -1,10 +1,10 @@
 .all-services-service {
     &__wrapper {
         width: 350px;
+        padding: 0 0 40px 0;
 
         @include mq-zero-and-screen-small {
             width: 100%;
-            padding: 0 0 40px 0;
         }
     }
 

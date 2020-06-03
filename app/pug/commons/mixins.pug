@@ -50,23 +50,47 @@ mixin all-projects-projects(amount)
                 .all-projects-project
                     .all-projects-project__image
 
-mixin footer-items-main-links(items)
-    .footer-items-links__title.footer-items-main-links__title Основные ссылки
+mixin footer-items-block-main-links(items)
+    .footer-items-block-links__title.footer-items-block-main-links__title Основные ссылки
     each item in items
-        a(href='#').footer-items-links__link.footer-items-main-links__link
-            +add-svg('footer-items-links__image footer-items-our-projects__image', 'icon-right-arrow')
+        a(href='#').footer-items-block-links__link.footer-items-block-main-links__link
+            +add-svg('footer-items-block-links__image footer-items-block-main-links__image', 'icon-right-arrow')
             = item
 
-mixin footer-items-our-projects(items)
-    .footer-items-links__title.footer-items-our-projects__title Наши проекты
+mixin footer-items-block-our-projects(items)
+    .footer-items-block-links__title.footer-items-block-our-projects__title Наши проекты
     each item in items
-        a(href='#').footer-items-links__link.footer-items-our-projects__link
-            +add-svg('footer-items-links__image footer-items-our-projects__image', 'icon-right-arrow')
+        a(href='#').footer-items-block-links__link.footer-items-block-our-projects__link
+            +add-svg('footer-items-block-links__image footer-items-block-our-projects__image', 'icon-right-arrow')
             = item
 
-mixin footer-items-social-links(items)
-    .footer-items-links__title.footer-items-social-links__title Социальные сети
+mixin footer-items-block-social-links(items)
+    .footer-items-block-links__title.footer-items-block-social-links__title Социальные сети
     each item in items
-        a(href='#').footer-items-links__link.footer-items-social-links__link
-            +add-svg('footer-items-links__image footer-items-our-projects__image', 'icon-right-arrow')
+        a(href='#').footer-items-block-links__link.footer-items-block-social-links__link
+            +add-svg('footer-items-block-links__image footer-items-block-social-links__image', 'icon-right-arrow')
+            = item
+
+mixin footer-items-block-mobile-main-links(items)
+    .footer-items-block-mobile-links__title.footer-items-block-mobile-main-links__title.hide-list-js__first Основные ссылки
+        +add-svg('footer-items-block-mobile-links__img footer-items-block-mobile-main-links__img hide-list-js__img', 'icon-arrow-down')
+    each item in items
+        a(href='#').footer-items-block-mobile-links__link.footer-items-block-mobile-main-links__link.hide-list-js--hidden
+            +add-svg('footer-items-block-mobile-links__image footer-items-block-mobile-our-projects__image', 'icon-right-arrow')
+            = item
+
+mixin footer-items-block-mobile-our-projects(items)
+    .footer-items-block-mobile-links__title.footer-items-block-mobile-our-projects__title.hide-list-js__first Наши проекты
+        +add-svg('footer-items-block-mobile-links__img footer-items-block-mobile-our-projects__img hide-list-js__img', 'icon-arrow-down')
+    each item in items
+        a(href='#').footer-items-block-mobile-links__link.footer-items-block-mobile-our-projects__link.hide-list-js--hidden
+            +add-svg('footer-items-block-mobile-links__image footer-items-block-mobile-our-projects__image', 'icon-right-arrow')
+            = item
+
+mixin footer-items-block-mobile-social-links(items)
+    .footer-items-block-mobile-links__title.footer-items-block-mobile-social-links__title.hide-list-js__first Социальные сети
+        +add-svg('footer-items-block-mobile-links__img footer-items-block-mobile-our-projects__img hide-list-js__img', 'icon-arrow-down')
+    each item in items
+        a(href='#').footer-items-block-mobile-links__link.footer-items-block-mobile-social-links__link.hide-list-js--hidden
+            +add-svg('footer-items-block-mobile-links__image footer-items-block-mobile-social-links__image', 'icon-right-arrow')
             = item

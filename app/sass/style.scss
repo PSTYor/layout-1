@@ -63,10 +63,14 @@
 @import "blocks/footer/footer";
 @import "blocks/footer/footer-items/footer-items";
 @import "blocks/footer/footer-items/footer-items-contact/footer-items-contact";
-@import "blocks/footer/footer-items/footer-items-links/footer-items-links";
+@import "blocks/footer/footer-items/footer-items-block/footer-items-block";
+@import "blocks/footer/footer-items/footer-items-block/footer-items-block-links/footer-items-block-links";
+@import "blocks/footer/footer-items/footer-items-block-mobile/footer-items-block-mobile";
+@import "blocks/footer/footer-items/footer-items-block-mobile/footer-items-block-mobile-links/footer-items-block-mobile-links";
 @import "blocks/footer/footer-copyright/footer-copyright";
 
 
 
 /* Глобальные стили */
 @import "blocks/different/different";
+@import 'blocks/hide-list-js/hide-list-js';

@@ -1,4 +1,4 @@
-.footer-items-links {
+.footer-items-block-links {
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -29,5 +29,9 @@
         width: 10px;
         height: 10px;
         padding: 0 5px 0 0;
+    }
+
+    &__hidden {
+        display: none;
     }
 }

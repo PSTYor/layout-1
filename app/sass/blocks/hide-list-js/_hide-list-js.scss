@@ -1,0 +1,15 @@
+.hide-list-js {
+
+    &__first {
+        transition: .5s;
+    }
+
+    &--hidden {
+        display: none;
+    }
+
+    &--color-red {
+        color: $fontRedHover;
+        fill: $fontRedHover;
+    }
+}

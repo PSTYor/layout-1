@@ -1,0 +1,13 @@
+.footer-items-block-mobile {
+  display: none;
+
+  @include mq-zero-and-screen-small {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mq-small {
+    display: flex;
+    flex-direction: column;
+  }
+}

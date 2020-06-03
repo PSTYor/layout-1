@@ -4,5 +4,15 @@
         justify-content: space-between;
         padding: 0 0 45px 0;
         border-bottom: 1px solid #e0e0e0;
+
+        @include mq-zero-and-screen-small {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        @include mq-small {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
     }
 }

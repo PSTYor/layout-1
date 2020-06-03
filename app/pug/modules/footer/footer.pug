@@ -18,12 +18,20 @@ footer.footer
                             a(href='#').footer-items-contact__link
                                 +add-svg('footer-items-contact__image footer-items-contact__position', 'icon-position')
                                 | Москва, Бульвар Ленина 33
-                    .footer-items-links.footer-items-main-links.footer-items-links__wrapper
-                        +footer-items-main-links(item_mainLinks)
-                    .footer-items-links.footer-items-our-projects.footer-items-links__wrapper
-                        +footer-items-our-projects(item_ourProjects)
-                    .footer-items-links.footer-items-social-links.footer-items-links__wrapper
-                        +footer-items-social-links(item_socialLinks)
+                    .footer-items-block
+                        .footer-items-block-links.footer-items-block-main-links.footer-items-block-links__wrapper
+                            +footer-items-block-main-links(item_mainLinks)
+                        .footer-items-block-links.footer-items-block-our-projects.footer-items-block-links__wrapper
+                            +footer-items-block-our-projects(item_ourProjects)
+                        .footer-items-block-links.footer-items-block-social-links.footer-items-block-links__wrapper
+                            +footer-items-block-social-links(item_socialLinks)
+                    .footer-items-block-mobile
+                        .footer-items-block-mobile-links.footer-items-block-mobile-main-links.footer-items-block-mobile-links__wrapper.hide-list-js
+                            +footer-items-block-mobile-main-links(item_mainLinks)
+                        .footer-items-block-mobile-links.footer-items-block-mobile-our-projects.footer-items-block-mobile-links__wrapper.hide-list-js
+                            +footer-items-block-mobile-our-projects(item_ourProjects)
+                        .footer-items-block-mobile-links.footer-items-block-mobile-social-links.footer-items-block-mobile-links__wrapper.hide-list-js
+                            +footer-items-block-mobile-social-links(item_socialLinks)
             .footer-copyright
                 .footer-copyright__wrapper
                     .footer-copyright__copy (с) 2019. Все права защищены.
