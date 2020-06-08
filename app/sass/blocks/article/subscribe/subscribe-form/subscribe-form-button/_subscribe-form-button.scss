@@ -40,6 +40,12 @@
         border: none;
         border-radius: 0 30px 30px 0;
         cursor: pointer;
+        transition: .3s;
+
+        &:focus,
+        &:active {
+            background: $fontRedHover;
+        }
 
         @include mq-zero-and-screen-small {
             box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
