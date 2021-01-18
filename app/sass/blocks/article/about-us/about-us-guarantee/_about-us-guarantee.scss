@@ -18,4 +18,12 @@
             padding: 0;
         }
     }
+
+    &__right {
+        width: 43%;
+
+        @include mq-zero-and-screen-small {
+            width: 0;
+        }
+    }
 }

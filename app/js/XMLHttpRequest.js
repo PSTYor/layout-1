@@ -1,5 +1,3 @@
-'use strict';
-
 window.onload = function() {
     document.querySelector('.subscribe-form').onsubmit = function(event) {
         event.preventDefault();
